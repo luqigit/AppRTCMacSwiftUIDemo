@@ -3,18 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865AFCE814A71CAE6F834FB3 /* Pods_AppRTCMacSwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B212562C9AF591D3D0FC7E86 /* Pods_AppRTCMacSwiftUIDemo.framework */; };
 		CD5229ED258CAD0300E717CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5229EC258CAD0300E717CF /* AppDelegate.swift */; };
 		CD5229EF258CAD0300E717CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5229EE258CAD0300E717CF /* ContentView.swift */; };
 		CD5229F1258CAD0500E717CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5229F0258CAD0500E717CF /* Assets.xcassets */; };
 		CD5229F4258CAD0500E717CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5229F3258CAD0500E717CF /* Preview Assets.xcassets */; };
 		CD5229F7258CAD0500E717CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5229F5258CAD0500E717CF /* Main.storyboard */; };
+		CD522A05258CADBF00E717CF /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522A04258CADBF00E717CF /* VideoView.swift */; };
+		CD522A09258CADF500E717CF /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD522A08258CADF500E717CF /* WebRTC.framework */; };
+		CD522A0C258CAE0000E717CF /* WebRTC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD522A08258CADF500E717CF /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD522A0F258CAE4D00E717CF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522A0E258CAE4D00E717CF /* AppViewModel.swift */; };
+		CD94C42F258F353C00E15C17 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C42E258F353C00E15C17 /* Logger.swift */; };
+		CD94C432258F36F200E15C17 /* RoomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C431258F36F200E15C17 /* RoomClient.swift */; };
+		CD94C434258F371D00E15C17 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C433258F371D00E15C17 /* Config.swift */; };
+		CD94C436258F3AA800E15C17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C435258F3AA800E15C17 /* Extensions.swift */; };
+		CD94C438258FA22300E15C17 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C437258FA22300E15C17 /* WebSocketClient.swift */; };
+		CD94C43B258FA3E400E15C17 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43A258FA3E400E15C17 /* WebRTCClient.swift */; };
+		CD94C43D258FA9FD00E15C17 /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43C258FA9FD00E15C17 /* SignalMessage.swift */; };
+		CD94C440258FB90D00E15C17 /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43F258FB90D00E15C17 /* CaptureController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD522A0B258CADF900E717CF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD522A0C258CAE0000E717CF /* WebRTC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B212562C9AF591D3D0FC7E86 /* Pods_AppRTCMacSwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppRTCMacSwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5229E9258CAD0300E717CF /* AppRTCMacSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTCMacSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5229EC258CAD0300E717CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5229EE258CAD0300E717CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +50,19 @@
 		CD5229F6258CAD0500E717CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD5229F8258CAD0500E717CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5229F9258CAD0500E717CF /* AppRTCMacSwiftUIDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppRTCMacSwiftUIDemo.entitlements; sourceTree = "<group>"; };
+		CD522A04258CADBF00E717CF /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		CD522A08258CADF500E717CF /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		CD522A0E258CAE4D00E717CF /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		CD94C42E258F353C00E15C17 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CD94C431258F36F200E15C17 /* RoomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomClient.swift; sourceTree = "<group>"; };
+		CD94C433258F371D00E15C17 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CD94C435258F3AA800E15C17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CD94C437258FA22300E15C17 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		CD94C43A258FA3E400E15C17 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		CD94C43C258FA9FD00E15C17 /* SignalMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
+		CD94C43F258FB90D00E15C17 /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		D6A2C3E9B5EA0869A1679C4D /* Pods-AppRTCMacSwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCMacSwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E11ED5BCA738032C06A54B16 /* Pods-AppRTCMacSwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCMacSwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +70,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865AFCE814A71CAE6F834FB3 /* Pods_AppRTCMacSwiftUIDemo.framework in Frameworks */,
+				CD522A09258CADF500E717CF /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219EE70BC4CEF3C73F5AA819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD522A08258CADF500E717CF /* WebRTC.framework */,
+				B212562C9AF591D3D0FC7E86 /* Pods_AppRTCMacSwiftUIDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD5229E0258CAD0300E717CF = {
 			isa = PBXGroup;
 			children = (
 				CD5229EB258CAD0300E717CF /* AppRTCMacSwiftUIDemo */,
 				CD5229EA258CAD0300E717CF /* Products */,
+				E2CCB83DC4748678AD10AF7F /* Pods */,
+				219EE70BC4CEF3C73F5AA819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +108,12 @@
 		CD5229EB258CAD0300E717CF /* AppRTCMacSwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD94C43E258FB8E000E15C17 /* Camera */,
+				CD94C439258FA3D300E15C17 /* WebRTC */,
+				CD94C430258F36BE00E15C17 /* Networking */,
+				CD94C42D258F352B00E15C17 /* Utils */,
+				CD522A0D258CAE3C00E717CF /* ViewModel */,
+				CD522A03258CAD9E00E717CF /* Views */,
 				CD5229EC258CAD0300E717CF /* AppDelegate.swift */,
 				CD5229EE258CAD0300E717CF /* ContentView.swift */,
 				CD5229F0258CAD0500E717CF /* Assets.xcassets */,
@@ -62,6 +121,7 @@
 				CD5229F8258CAD0500E717CF /* Info.plist */,
 				CD5229F9258CAD0500E717CF /* AppRTCMacSwiftUIDemo.entitlements */,
 				CD5229F2258CAD0500E717CF /* Preview Content */,
+				CD94C433258F371D00E15C17 /* Config.swift */,
 			);
 			path = AppRTCMacSwiftUIDemo;
 			sourceTree = "<group>";
@@ -74,6 +134,66 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD522A03258CAD9E00E717CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD522A04258CADBF00E717CF /* VideoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD522A0D258CAE3C00E717CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD522A0E258CAE4D00E717CF /* AppViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD94C42D258F352B00E15C17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD94C42E258F353C00E15C17 /* Logger.swift */,
+				CD94C435258F3AA800E15C17 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD94C430258F36BE00E15C17 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CD94C431258F36F200E15C17 /* RoomClient.swift */,
+				CD94C437258FA22300E15C17 /* WebSocketClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD94C439258FA3D300E15C17 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				CD94C43A258FA3E400E15C17 /* WebRTCClient.swift */,
+				CD94C43C258FA9FD00E15C17 /* SignalMessage.swift */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		CD94C43E258FB8E000E15C17 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CD94C43F258FB90D00E15C17 /* CaptureController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E2CCB83DC4748678AD10AF7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A2C3E9B5EA0869A1679C4D /* Pods-AppRTCMacSwiftUIDemo.debug.xcconfig */,
+				E11ED5BCA738032C06A54B16 /* Pods-AppRTCMacSwiftUIDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD5229FC258CAD0500E717CF /* Build configuration list for PBXNativeTarget "AppRTCMacSwiftUIDemo" */;
 			buildPhases = (
+				CBD85430605DC43E99681838 /* [CP] Check Pods Manifest.lock */,
 				CD5229E5258CAD0300E717CF /* Sources */,
 				CD5229E6258CAD0300E717CF /* Frameworks */,
 				CD5229E7258CAD0300E717CF /* Resources */,
+				587B28629736EC2CBB29263A /* [CP] Embed Pods Frameworks */,
+				CD522A0B258CADF900E717CF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -139,13 +262,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		587B28629736EC2CBB29263A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD85430605DC43E99681838 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppRTCMacSwiftUIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD5229E5258CAD0300E717CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD522A05258CADBF00E717CF /* VideoView.swift in Sources */,
+				CD94C43B258FA3E400E15C17 /* WebRTCClient.swift in Sources */,
+				CD94C42F258F353C00E15C17 /* Logger.swift in Sources */,
 				CD5229EF258CAD0300E717CF /* ContentView.swift in Sources */,
+				CD94C436258F3AA800E15C17 /* Extensions.swift in Sources */,
+				CD94C434258F371D00E15C17 /* Config.swift in Sources */,
+				CD94C440258FB90D00E15C17 /* CaptureController.swift in Sources */,
+				CD94C438258FA22300E15C17 /* WebSocketClient.swift in Sources */,
+				CD522A0F258CAE4D00E717CF /* AppViewModel.swift in Sources */,
+				CD94C43D258FA9FD00E15C17 /* SignalMessage.swift in Sources */,
 				CD5229ED258CAD0300E717CF /* AppDelegate.swift in Sources */,
+				CD94C432258F36F200E15C17 /* RoomClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +455,7 @@
 		};
 		CD5229FD258CAD0500E717CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A2C3E9B5EA0869A1679C4D /* Pods-AppRTCMacSwiftUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +466,10 @@
 				DEVELOPMENT_TEAM = U9776WFKD7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppRTCMacSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +484,7 @@
 		};
 		CD5229FE258CAD0500E717CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11ED5BCA738032C06A54B16 /* Pods-AppRTCMacSwiftUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +495,10 @@
 				DEVELOPMENT_TEAM = U9776WFKD7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppRTCMacSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
