@@ -14,6 +14,8 @@ class AppViewModel: ObservableObject {
     @Published var localVideoTrack : RTCVideoTrack?
     @Published var refreshRemoteVideoTrack: Bool = false
     @Published var refreshLocalVideoTrack: Bool = false
+    
+    
     var _roomClient:RoomClient?
     
 // MARK: Room
@@ -223,4 +225,18 @@ extension AppViewModel: WebRTCClientDelegate {
     func webRTCClient(_ client: WebRTCClient, sendData data: Data) {
         sendSignalingMessage(data)
     }
+}
+
+//MARK: 音视频开关
+extension AppViewModel{
+
+    
+    func videoEnable(_ enable:Bool) -> Void {
+        self._webRTCClient?.VideoIsEnable = enable
+    }
+    
+    func audioEnable(_ enable:Bool) -> Void {
+        self._webRTCClient?.AudioIsEnable = enable
+    }
+
 }

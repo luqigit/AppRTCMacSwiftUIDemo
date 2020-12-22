@@ -15,11 +15,20 @@ struct ContentView: View {
     var body: some View {
         VStack{
             HStack{
-                VideoView(videoTrack: self.viewModel.localVideoTrack,refreshVideoTrack: Binding<Bool>(get: {return self.viewModel.refreshLocalVideoTrack},
-                                                                                                      set: { p in self.viewModel.refreshLocalVideoTrack = p}));
+                VStack{
+                    VideoView(videoTrack: self.viewModel.localVideoTrack,refreshVideoTrack: Binding<Bool>(get: {return self.viewModel.refreshLocalVideoTrack},
+                                                                                                          set: { p in self.viewModel.refreshLocalVideoTrack = p}));
+                    Text("local")
+                    CheckView(isChecked: false, title: "视频", disable: self.viewModel.localVideoTrack == nil, onCheck: self.viewModel.videoEnable)
+                    CheckView(isChecked: true, title: "音频", disable: self.viewModel.localVideoTrack == nil, onCheck: self.viewModel.audioEnable)
+                }
+
                 Spacer();
+                VStack{
                 VideoView(videoTrack: self.viewModel.remoteVideoTrack,refreshVideoTrack: Binding<Bool>(get: {return self.viewModel.refreshRemoteVideoTrack},
                                                                                                       set: { p in self.viewModel.refreshRemoteVideoTrack = p}));
+                    Text("remote")
+                }
             }
             Spacer();
             Text("信令服务器  " + Config.default.signalingServer);

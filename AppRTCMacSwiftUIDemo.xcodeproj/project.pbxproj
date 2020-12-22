@@ -25,6 +25,7 @@
 		CD94C43B258FA3E400E15C17 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43A258FA3E400E15C17 /* WebRTCClient.swift */; };
 		CD94C43D258FA9FD00E15C17 /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43C258FA9FD00E15C17 /* SignalMessage.swift */; };
 		CD94C440258FB90D00E15C17 /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94C43F258FB90D00E15C17 /* CaptureController.swift */; };
+		CDCBB3072591F3E400CC71EF /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCBB3062591F3E400CC71EF /* CheckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,7 @@
 		CD94C43A258FA3E400E15C17 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		CD94C43C258FA9FD00E15C17 /* SignalMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
 		CD94C43F258FB90D00E15C17 /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		CDCBB3062591F3E400CC71EF /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		D6A2C3E9B5EA0869A1679C4D /* Pods-AppRTCMacSwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCMacSwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E11ED5BCA738032C06A54B16 /* Pods-AppRTCMacSwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCMacSwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-AppRTCMacSwiftUIDemo/Pods-AppRTCMacSwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CD522A04258CADBF00E717CF /* VideoView.swift */,
+				CDCBB3062591F3E400CC71EF /* CheckView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				CD522A0F258CAE4D00E717CF /* AppViewModel.swift in Sources */,
 				CD94C43D258FA9FD00E15C17 /* SignalMessage.swift in Sources */,
 				CD5229ED258CAD0300E717CF /* AppDelegate.swift in Sources */,
+				CDCBB3072591F3E400CC71EF /* CheckView.swift in Sources */,
 				CD94C432258F36F200E15C17 /* RoomClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

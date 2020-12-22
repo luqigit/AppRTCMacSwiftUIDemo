@@ -21,3 +21,6 @@
   1. 基于mac平台X64 webrtc.framework 视频部分会崩溃 去掉视频功能 可以防止崩溃
     在 WebRTCClient.swift 文件 createMediaSenders 注释掉 视频相关代码
  
+ ## TODO
+- [x] 控制 音频发送 和 视频发送
+- [ ] 添加 滤镜
